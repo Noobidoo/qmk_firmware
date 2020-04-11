@@ -1,4 +1,4 @@
-/* A standard layout for the Dactyl Manuform 5x6 Keyboard */
+/* A standard layout for the Dactyl Manuform mini 5x6 Keyboard */
 
 #include QMK_KEYBOARD_H
 
@@ -41,8 +41,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        _______,_______,_______,_______,_______,KC_LBRC,                        KC_RBRC,_______,KC_NLCK,KC_INS ,KC_SLCK,KC_MUTE,
        _______,KC_LEFT,KC_UP  ,KC_DOWN,KC_RGHT,KC_LPRN,                        KC_RPRN,KC_MPRV,KC_MPLY,KC_MNXT,_______,KC_VOLU,
        _______,_______,_______,_______,_______,_______,                        _______,_______,_______,_______,_______,KC_VOLD,
-                                               _______,_______,            KC_EQL ,_______,
-                                                       _______,            _______,
+                    _______,_______,                                                           KC_EQL ,_______,
+                                               _______,                            _______,
                                                _______,_______,            _______,_______,
                                                _______,_______,            _______,_______
   ),
