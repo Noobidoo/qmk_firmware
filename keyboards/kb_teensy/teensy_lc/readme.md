@@ -1,3 +1,1 @@
-# ChibiOS Test
-
-Test code for the teensy lc one key keyboard
+Keaboard driven by teency lc with rgb strip on pin 17

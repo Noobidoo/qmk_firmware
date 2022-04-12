@@ -42,4 +42,7 @@
  *   5 for Teensy 3.x */
 #define KINETIS_USB_USB0_IRQ_PRIORITY         2
 
+#define STM32_SYSCLK KINETIS_SYSCLK_FREQUENCY
+#define NOP_FUDGE 0.4
+
 #endif /* _MCUCONF_H_ */
