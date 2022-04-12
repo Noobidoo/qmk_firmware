@@ -27,10 +27,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Rows are doubled-up
 #define MATRIX_ROWS 12
 #define MATRIX_COLS 6
-
+#define PRO_MICRO 1
 // wiring of each half
-#define MATRIX_COL_PINS { D4, C6, D7, E6, B4, B5 }
-#define MATRIX_ROW_PINS { F6, F7, B1, B3, B2, B6 }
+#ifdef PRO_MICRO
+    //A3,A2,A1,A0,D10,D9 in arduino board
+    #define MATRIX_COL_PINS { F4, F5, F6, F7, B6, B5 }
+    //D4,D5,D6,D7,IO8,IO9 B4, E6, D7, C6, D4, D2
+    #define MATRIX_ROW_PINS { B4, E6, D7, C6, D4, D1 }
+#else
+    //A0,A1,A2,A3,A4,A5 in arduino board
+    #define MATRIX_COL_PINS { F7, F6, F5, F4, F1, F0 }
+    //D4,D5,D6,D7,IO8,IO9
+    #define MATRIX_ROW_PINS { D4, C6, D7, E6, B4, B5 }
+#endif
 
 #define DIODE_DIRECTION COL2ROW
 
