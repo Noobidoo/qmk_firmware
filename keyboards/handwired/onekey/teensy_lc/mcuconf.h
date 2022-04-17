@@ -44,5 +44,10 @@
 
 #define STM32_SYSCLK KINETIS_SYSCLK_FREQUENCY
 #define NOP_FUDGE 0.4
+/*
+ * I2C driver settings
+ */
+#define KINETIS_I2C_USE_I2C0                TRUE
+#define KINETIS_I2C_I2C0_PRIORITY           4
 
 #endif /* _MCUCONF_H_ */
